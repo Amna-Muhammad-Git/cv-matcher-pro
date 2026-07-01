@@ -3,9 +3,7 @@ import mammoth from "mammoth";
 // pdfjs-dist worker setup
 async function loadPdfJs() {
   const pdfjs = await import("pdfjs-dist");
-  const worker = await import(
-    /* @vite-ignore */ "pdfjs-dist/build/pdf.worker.min.mjs?url"
-  );
+  const worker = await import("pdfjs-dist/build/pdf.worker.min.mjs?url");
   pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
   return pdfjs;
 }
