@@ -8,6 +8,8 @@ import { ScoreBadge } from "@/components/matcher/ScoreBadge";
 import { SkillPanel } from "@/components/matcher/SkillPanel";
 import { CvDiff } from "@/components/matcher/CvDiff";
 import { SettingsDialog } from "@/components/matcher/SettingsDialog";
+import { AuthButton } from "@/components/matcher/AuthButton";
+
 import { runMatch, type MatchResult, getWebhookUrl } from "@/lib/n8n";
 
 export const Route = createFileRoute("/")({
@@ -121,7 +123,11 @@ function Index() {
             <p className="mono-label mt-1">tailor · score · rewrite</p>
           </div>
         </div>
-        <SettingsDialog />
+        <div className="flex items-center gap-2">
+          <AuthButton />
+          <SettingsDialog />
+        </div>
+
       </header>
 
       <main className="mx-auto max-w-7xl px-6 pb-24">
