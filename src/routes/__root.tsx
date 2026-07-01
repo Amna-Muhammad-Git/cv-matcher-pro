@@ -77,15 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "CV Matcher · tailor your CV to any job in under a minute" },
+      {
+        name: "description",
+        content:
+          "Upload your CV, paste a job description, and get a match score, skill-gap analysis, and a rewritten CV — powered by your n8n workflow.",
+      },
+      { name: "author", content: "cv/match" },
+      { property: "og:title", content: "CV Matcher" },
+      {
+        property: "og:description",
+        content:
+          "Match score, skill gaps, and a tailored CV rewrite — driven by n8n.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
-    ],
     links: [
       {
         rel: "stylesheet",
