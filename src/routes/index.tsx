@@ -8,6 +8,8 @@ import { ScoreBadge } from "@/components/matcher/ScoreBadge";
 import { SkillPanel } from "@/components/matcher/SkillPanel";
 import { CvDiff } from "@/components/matcher/CvDiff";
 import { SettingsDialog } from "@/components/matcher/SettingsDialog";
+import { AuthButton } from "@/components/matcher/AuthButton";
+
 import { runMatch, type MatchResult, getWebhookUrl } from "@/lib/n8n";
 
 export const Route = createFileRoute("/")({
