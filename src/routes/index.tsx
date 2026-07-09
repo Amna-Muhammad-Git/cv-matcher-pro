@@ -8,7 +8,6 @@ import { ScoreBadge } from "@/components/matcher/ScoreBadge";
 import { SkillPanel } from "@/components/matcher/SkillPanel";
 import { CvDiff } from "@/components/matcher/CvDiff";
 import { SettingsDialog } from "@/components/matcher/SettingsDialog";
-import { AuthButton } from "@/components/matcher/AuthButton";
 
 import { runMatch, type MatchResult, getWebhookUrl } from "@/lib/n8n";
 
@@ -124,7 +123,6 @@ function Index() {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <AuthButton />
           <SettingsDialog />
         </div>
 
@@ -232,7 +230,7 @@ function Index() {
       </main>
 
       <footer className="mx-auto max-w-7xl px-6 pb-8">
-        <p className="mono-label">runs on n8n · parsed locally · nothing stored</p>
+        <p className="mono-label">runs on n8n · parsed locally</p>
       </footer>
     </div>
   );
